@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<root>
+    <!-- Параметры релиза. -->
+    <object name = "Release"> 
+
+        <string name = "RenderSystem" value = "Direct3D9" />
+
+        <object name = "Direct3D9">
+                <string name = "RenderingDevice" value = "" />
+<!--
+                <string name = "RenderingDevice" value = "MSI RX700PRO" />
+                <string name = "RenderingDevice" value = "NVIDIA NVPerfHUD" />
+-->
+
+            <string name = "RSName" value = "Direct3D9 Rendering SubSystem" />
+            <object name = "RendererOptions">
+
+                <string name = "Anti aliasing" value = "None" />
+                <string name = "Full Screen" value = "No" />
+                <string name = "VSync" value = "Yes" />
+                <string name = "Video Mode" value = "1024 x 768 @ 32-bit colour" />
+                <string name = "Preferred Fog Type" value = "Pixel Fog" />
+            </object>
+        </object>
+
+    </object>
+</root>

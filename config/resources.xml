@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes" ?>
+<root>
+	<object name="Resources">
+		<object name="Common/GameSettings">
+			<string name="Path" value="..\data\params\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="Common/Scripts">
+			<string name="Path" value="..\data\scripts\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="Common/Scripts/Editor">
+			<string name="Path" value="..\data\scripts\editor\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="Common/Scripts/Missions">
+			<string name="Path" value="..\data\scripts\missions\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="Common/Scripts/Missions/Multiplayer">
+			<string name="Path" value="..\data\scripts\missions\multiplayer\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="Missions/Templates">
+			<string name="Path" value="..\data\templates\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="Missions/Templates/Multiplayer">
+			<string name="Path" value="..\data\templates\multiplayer"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="SL/Misc">
+			<string name="Path" value="..\data\graphics\strategic_level\map\misc\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="SMAPath">
+			<string name="Path" value="..\data\"/>
+			<string name="Type" value="SMA"/>
+		</object>
+		<object name="Units">
+			<string name="Path" value="..\data\units\"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+		<object name="Units/Multiplayer">
+			<string name="Path" value="..\data\units\multiplayer"/>
+			<string name="Type" value="FileSystem"/>
+		</object>
+	</object>
+</root>

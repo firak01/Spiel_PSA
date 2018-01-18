@@ -1,0 +1,55 @@
+﻿# AUSGANGSCODE IM HISINONE PROJEKT HEILBRONN. 20180118
+
+# Ignore everything
+*
+
+# Ignore Directories NOT
+#!*/webapps/qisserver/*
+#!*/webapps/ROOT/*
+!/config/*
+!/mods/_128_Shoho/*
+
+# Don`t ignore directories, so we can recurse into them
+!*/
+
+# Ignore directories
+#*/
+/data/
+/bin/
+/save*/
+
+
+# Ignore
+.project
+*.7z
+
+
+# But don´t Ignore publish modul relevant files
+#!*_HHN.xml
+#!*_HHN.xsl
+
+# Auch die Datenbankkonfiguration ausschliessen. Das muss unterhalb des 'don't ignore' mit Wildcards der Endung stehen.
+#/webapps/qisserver/WEB-INF/conf/databases_HHN.xml
+
+
+# Auf allen anderen Ebenen .gitignore ausschliessen. Nur zuoberst nicht.
+!.gitignore
+*/.gitignore
+*/*/.gitignore
+*/*/*/.gitignore
+*/*/*/*/.gitignore
+*/*/*/*/*/.gitignore
+*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/*/*/*/*/*/*/.gitignore
+*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/.gitignore
+
+
+
+

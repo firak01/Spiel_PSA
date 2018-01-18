@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "Windows-1251"?>
+<!-- Copyright (c)2004 Lesta Studio -->
+<root>
+    <object name = "Loader">
+    	<!-- Параметры релиза. -->
+    	<include file = "../config/releasecfg.xml"/>
+    	<!-- Параметры дебага. -->
+    	<include file = "../config/debugcfg.xml"/>
+    	<!-- Параметры редактора. -->
+    	<!-- <include file = "../config/editorcfg.xml"/> -->
+    	<!-- Пути к скриптам. -->
+    	<string name = "LuaPath" value = "../data/scripts/?.lua;../data/scripts/editor/?.lua;../data/scripts/missions/?.lua"/>
+    	<!-- Скрипты, выполняющиеся при запуске приложения и при выходе из него. -->
+    	<string name = "InitScript" value = "../data/scripts/ldrinit.lua"/>
+    	<string name = "ShutdownScript" value = "../data/scripts/ldrshutdown.lua"/>
+    	<!-- Название скриншотов -->
+    	<string name = "ScreenshotDir" value = "../screenshots"/>
+    	<string name = "ScreenshotFile" value = "../screenshots/shot%04d.png"/>
+    	<!-- Пути для ресурсов. -->
+    	<include file = "../config/resources.xml"/>
+    	<!-- Параметры звука и музыки -->
+    	<include file = "../config/mediacfg.xml"/>
+    	<!-- Видео режим по умолчанию -->
+    	<string name= "DefaultVideoMode" value = "1024 x 768 @ 32-bit colour"/>
+    	<!-- Качество текстур(при 1 кач-во max)-->
+    	<integer name= "TextureQuality" value = "2"/>
+    	<!-- Архивировация файлов сохранения-->
+	<boolean name = "CompressSave" value = "true" />
+    </object>
+</root>

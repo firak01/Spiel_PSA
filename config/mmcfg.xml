@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "Windows-1251"?>
+<!-- Copyright (c)2004 Lesta Studio -->
+<root>
+    <object name = "MainMenu">
+        <boolean name="BackMission" value="true"/>
+        <!-- for auto search of LoadingBack[N].tga - from 1 to LoadingsCount -->
+        <integer name="LoadingsCount" value="25"/>
+    </object>
+</root>

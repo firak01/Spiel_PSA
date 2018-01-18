@@ -1,0 +1,353 @@
+<?xml version = "1.0" encoding = "Windows-1251"?>
+<!-- Copyright (c)2004 Lesta Studio -->
+<root>
+	<object name = "StrategLevel">
+		<!-- сколько денег у японцев берется за основание базы -->
+		<integer name = "SLJapanBaseCreateMoney" value = "10000"/>
+		<!-- сколько денег у американцев берется за основание базы -->
+		<integer name = "SLUsaBaseCreateMoney" value = "15000"/>
+		<!-- сколько денег у англичан берется за основание базы -->
+		<integer name = "SLEnglandBaseCreateMoney" value = "10000"/>
+
+		<!-- цвет и размер текста на базе -->
+		<integer name = "SLBaseTextSize" value = "20"/>
+		<string name = "SLBaseTextColor" value = "2 2 2"/>
+		<!-- цвет и размер текста на зоне -->
+		<integer name = "SLMapZoneTextSize" value = "20"/>
+		<string name = "SLMapZoneTextColor" value = "2 2 1"/>
+
+		<!-- начиная с SLTextPositionToBeginScale текст начинает увеличиваться. коэффициент увеличения  (len - SLTextPositionToBeginScale)/SLTextScaleDiviser -->
+		<integer name = "SLTextPositionToBeginScale" value = "900"/>
+		<integer name = "SLTextScaleDiviser" value = "1900"/>
+
+		<!-- во столько раз увеличится размер текста, на который наведена мышка -->
+		<float name = "SLScaleMultiplierForSelected" value = "1.75"/>
+
+		<!-- цвет выделенного текста -->
+		<string name = "SLSelectedTextColor" value = "10 10 9 1"/>
+
+		<!-- начиная с SLTextPositionToBeginAlpha до SLTextPositionToEndAlpha текст полностью исчезнет -->
+		<float name = "SLTextPositionToBeginAlpha" value = "500"/>
+		<float name = "SLTextPositionToEndAlpha" value = "2000"/>
+
+		<!--Физическое соотношение сторон монитора в см (обычно 4/3, для широких 16/9)-->
+		<float name = "DiplayAspectRatio" value = "1.33"/>
+
+		<string name = "InitScript" value = "../data/scripts/slinit.lua"/>
+		<string name = "PlayersConfig" value = "../data/modules/sl/PlayersConfig.xml"/>
+		<include file = "../data/modules/sl/ProductionOrdersTemplates.xml"/>
+		<include file = "../data/modules/sl/ObjectAttributeTemplates.xml"/>
+		<integer name = "BaseDanger" value = "255"/>
+		<integer name = "BaseDangerRadius" value = "11"/>
+		<float name = "BaseVRange" value = "50"/>
+		<float name = "ShipVRange" value = "45"/>
+		<float name = "AirplaneVRange" value = "70"/>
+
+		<!--параметры, используемые для одновременного посыла формаций-->
+		<object name="Arrival">
+			<float name = "DistMove" value = "100"/>
+			<float name = "DistClose" value = "100"/>
+			<integer name = "ShipMaxDelay" value = "86400"/>
+		</object>
+
+		<!--Параметры стратегической карты-->
+		<object name = "StrategMap">
+			<integer name = "Width" value = "4096"/>
+			<integer name = "Height" value = "2560"/>
+			<integer name = "GeoWidth" value = "22222"/>
+			<integer name = "GeoHeight" value = "13888"/>
+			<integer name = "PassMapWidth" value = "225"/>
+			<integer name = "PassMapHeight" value = "150"/>
+			<object name = "GeographicBounds">
+				<float name = "left" value = "79.8"/>
+				<float name = "top" value = "80.3"/>
+				<float name = "right" value = "-77.1"/>
+				<float name = "bottom" value = "-45.7"/>
+			</object>
+			<boolean name = "ShowRouteOnlyWithAlt" value = "true"/>
+		</object>
+		<!--Экономические параметры-->
+		<object name = "Economics">
+			<string name = "ResourcesIds" value = "Money_Aluminium_Iron_Oil"/>
+			<integer name = "ResourcesCount" value = "4"/>
+			<float name = "K_MaxCost" value = "3.0"/>
+			<float name = "K_MinCost" value = "0.7"/>
+			<float name = "K_MinTime" value = "0.7"/>
+			<object name = "ResExport">
+				<float name = "MinIron" value = "7000"/>
+				<float name = "MinAluminium" value = "60"/>
+				<float name = "MinOil" value = "15000"/>
+			</object>
+			<object name = "MinImport">
+				<float name = "Oil" value = "5000"/>
+			</object>
+		</object>
+		<!--Параметры стратега-->
+		<object name = "Strategist">
+			<object name = "usaWMD">
+				<string name = "Ammo" value = "bomb_US_NU2000"/>
+				<integer name = "ProdCount" value = "1"/>
+				<integer name = "ZonePopulation" value = "1000000"/>
+				<integer name = "MaxDistToTarget" value = "4000"/>
+				<string name = "Carriers" value = "B-29"/>
+			</object>
+			<object name = "englandWMD">
+				<string name = "Ammo" value = "bomb_US_NU2000"/>
+				<integer name = "ProdCount" value = "1"/>
+				<integer name = "ZonePopulation" value = "1000000"/>
+				<integer name = "MaxDistToTarget" value = "4000"/>
+				<string name = "Carriers" value = "B-29"/>
+			</object>
+			<object name = "japanWMD">
+				<string name = "Ammo" value = "bomb_Jap_BL200"/>
+				<integer name = "ProdCount" value = "50"/>
+				<integer name = "ZonePopulation" value = "1000000"/>
+				<integer name = "MaxDistToTarget" value = "5000"/>
+				<string name = "Carriers" value = "G4M;G8N;Ki-21;P1Y"/>
+			</object>
+			<float name = "MaxPatrolRange" value = "1000"/>
+			<integer name = "MaxPatrolsCountForBase" value = "2"/>
+			<integer name = "PatrolDTime" value = "800"/>
+			<integer name = "PatrolDTimeRand" value = "800"/>
+			<integer name = "MaxHuntersCountForBase" value = "2"/>
+			<float name = "HunterAttackProb" value = "0.5"/>
+			<integer name = "HuntingDTime" value = "4500"/>
+			<integer name = "HuntingDTimeRand" value = "5000"/>
+			<float name = "SubmarineDetectionProbForShip" value = "0.02"/>
+			<float name = "SubmarineDetectionProbForAirplane" value = "0.04"/>
+			<float name = "AirplaneDetectionProbForSubmarine" value = "0.03"/>
+			<float name = "EnemyInfoEstimationErrorLeftKMax" value = "0.6"/>
+			<float name = "EnemyInfoEstimationErrorRightKMax" value = "1.8"/>
+			<integer name = "EnemyInfoEstimationErrorDConst" value = "4800"/>
+			<integer name = "EnemyInfoEstimationErrorTConst" value = "9800"/>
+			<boolean name = "AirAttackForformationsOpt" value = "false"/>
+		</object>
+		<!--Параметры GUI-->
+		<object name = "GUI">
+			<object name = "Colours">
+				<string name = "StringListTitle" value = "1, .74, .29"/>
+				<string name = "StringListTotal" value = "1, .5, .25"/>
+				<string name = "FormTypeStatus_Partly" value = ".9 .7 .7"/>
+				<string name = "FormTypeStatus_Full" value = ".02 0.26 0"/>
+				<string name = "FormTypeStatus_Empty" value = ".349 .0 .0"/>
+				<string name = "BlueForDark" value = "0 .5 1"/>
+				<string name = "BlueForLight" value = "0 .2 0.8"/>
+				<string name = "RedForLight" value = ".49 .12 .07"/>
+				<string name = "OnTaskFailed" value = "1.0 0.8 0.8"/>
+			</object>
+			<object name = "ObjectsEditor">
+				<object name = "DevList">
+					<integer name = "Left" value = "2"/>
+					<integer name = "Top" value = "0"/>
+					<integer name = "RowCount" value = "7"/>
+					<integer name = "RowWidth" value = "270"/>
+					<integer name = "RowHeight" value = "61"/>
+					<string name = "RowTemplate" value = "SL/Templates/OE/DevBtn"/>
+					<integer name = "MinInterval" value = "4"/>
+				</object>
+			</object>
+			<object name = "Resources">
+				<integer name = "FirstColWidth" value = "248"/>
+				<integer name = "FirstRowHeight" value = "29"/>
+				<integer name = "RowCount" value = "7"/>
+				<integer name = "ScrollBarWidth" value = "22"/>
+				<string name = "MainZoneColour" value = "1, .5, .25"/>
+				<string name = "MetropolyZoneColour" value = "0.9 0.9 0.9"/>
+				<string name = "ZoneColour" value = "0.7 0.7 0.7"/>
+			</object>
+			<object name = "Production">
+				<string name = "ProductsKinds" value = "Ships.Airplanes.Turrets_Probes.Ammos"/>
+				<integer name = "FirstRowHeight" value = "20"/>
+				<integer name = "ColCount" value = "4"/>
+				<integer name = "RowCount" value = "7"/>
+				<integer name = "BtnWidth" value = "216"/>
+				<integer name = "OEBtnWidth" value = "22"/>
+				<object name = "QueueBox">
+					<integer name = "Left" value = "206"/>
+					<integer name = "Top" value = "8"/>
+					<string name = "PanelTemplate" value = "SL/Templates/CommonHListBox"/>
+					<integer name = "Width" value = "784"/>
+					<integer name = "Height" value = "103"/>
+					<string name = "ElemTemplate" value = "SL/Templates/ProdCPBBtn"/>
+					<integer name = "ElemWidth" value = "78"/>
+					<integer name = "ElemHeight" value = "68"/>
+					<integer name = "ElemLeft" value = "20"/>
+					<integer name = "ElemTop" value = "5"/>
+					<integer name = "MinInterval" value = "2"/>
+					<string name = "HintId" value = "IDS_HINT_ProductionQueuePanel"/>
+					<string name = "ActionTargets" value = "MainButton Important Waiting" />
+				</object>
+			</object>
+			<object name = "Technology">
+				<integer name = "FirstRowHeight" value = "20"/>
+				<integer name = "ColCount" value = "5"/>
+				<integer name = "RowCount" value = "7"/>
+				<integer name = "BtnWidth" value = "179"/>
+				<object name = "QueueBox">
+					<integer name = "Left" value = "206"/>
+					<integer name = "Top" value = "8"/>
+					<string name = "PanelTemplate" value = "SL/Templates/CommonHListBox"/>
+					<integer name = "Width" value = "784"/>
+					<integer name = "Height" value = "103"/>
+					<string name = "ElemTemplate" value = "SL/Templates/CPBBtn"/>
+					<integer name = "ElemWidth" value = "78"/>
+					<integer name = "ElemHeight" value = "68"/>
+					<integer name = "ElemLeft" value = "20"/>
+					<integer name = "ElemTop" value = "5"/>
+					<integer name = "MinInterval" value = "2"/>
+					<string name = "HintId" value = "IDS_HINT_TechnologyQueuePanel"/>
+					<string name = "ActionTargets" value = "MainButton Important Waiting" />
+				</object>
+			</object>
+			<object name = "Base/Persons">
+				<string name = "PanelTemplate" value = "SL/Templates/CommonHListBox"/>
+				<integer name = "Width" value = "585"/>
+				<integer name = "Height" value = "84"/>
+				<string name = "ElemTemplate" value = "SL/Templates/PersonBtn"/>
+				<integer name = "ElemWidth" value = "140"/>
+				<integer name = "ElemHeight" value = "57"/>
+				<integer name = "ElemLeft" value = "8"/>
+				<integer name = "ElemTop" value = "7"/>
+				<integer name = "MinInterval" value = "2"/>
+				<string name = "HintId" value = "IDS_HINT_BasePersonBtn"/>
+				<string name = "ActionTargets" value = "MainButton" />
+			</object>
+			<object name = "Base/Building">
+				<integer name = "AreaLeft" value = "120"/>
+				<integer name = "AreaTop" value = "165"/>
+				<integer name = "FirstRowHeight" value = "20"/>
+				<integer name = "BtnWidth" value = "240"/>
+				<integer name = "BtnHeight" value = "120"/>
+				<integer name = "IntervalW" value = "16"/>
+				<integer name = "IntervalH" value = "6"/>
+				<integer name = "FirstRowHeight" value = "20"/>
+				<integer name = "TopSpacing" value = "45"/>
+				<integer name = "ColCount" value = "4"/>
+				<integer name = "RowCount" value = "4"/>
+				<string name = "buildingColour" value = "0.93 0.0 0.0"/>
+				<string name = "upgradeColour" value = "0.0 0.49 1.0"/>
+				<string name = "repairColour" value = "0.04 0.93 0.0"/>
+				<object name = "QueueBox">
+					<integer name = "Left" value = "211"/>
+					<integer name = "Top" value = "8"/>
+					<string name = "PanelTemplate" value = "SL/Templates/CommonHListBox"/>
+					<integer name = "Width" value = "777"/>
+					<integer name = "Height" value = "103"/>
+					<string name = "ElemTemplate" value = "SL/Templates/Building/QueueBtn"/>
+					<integer name = "ElemWidth" value = "78"/>
+					<integer name = "ElemHeight" value = "68"/>
+					<integer name = "ElemLeft" value = "20"/>
+					<integer name = "ElemTop" value = "5"/>
+					<integer name = "MinInterval" value = "2"/>
+					<string name = "ActionTargets" value = "MainButton Important Waiting" />
+				</object>
+			</object>
+		</object>
+		<!--Всяко разно-->
+		<object name = "Misc">
+			<integer name = "MaxShipsInPlayerFormations" value = "60"/>
+			<float name = "UnitRepairRate" value = "0.5"/>
+			<float name = "KRadioRange" value = "3"/>
+			<float name = "MaxRadioGain" value = "32258.06"/>
+			<object name = "Airport">
+				<string name = "MaxLandingWeight_usa" value = "9_15_30_200"/>
+				<string name = "MaxLandingWeight_japan" value = "4_9_15_200"/>
+				<string name = "MaxLandingWeight_england" value = "9_15_30_200"/>
+
+				<string name = "MaxLandingWeight_ussr" value = "9_15_30_200"/>
+				<string name = "MaxLandingWeight_holland" value = "9_15_30_200"/>
+				<string name = "MaxLandingWeight_germany" value = "9_15_30_200"/>
+			</object>
+			<object name = "LandingOperation">
+				<float name = "Superiority_usa" value = "4"/>
+				<float name = "Superiority_japan" value = "1.5"/>
+				<float name = "Superiority_england" value = "2"/>
+				<float name = "Superiority_ussr" value = "1.5"/>
+				<float name = "Superiority_holland" value = "1.5"/>
+				<float name = "Superiority_germany" value = "1.5"/>
+				<float name = "ScoutingError" value = "0.5"/>
+			</object>
+			<object name = "Battle">
+				<float name = "BaseBattleRadius" value = "100"/>
+			</object>
+			<integer name = "MaxMessages" value = "100"/>
+
+			<object name = "MenDelivery">
+				<float name = "Seamen" value = "0.2"/>
+				<float name = "Pilots" value = "0.05"/>
+				<float name = "Engineers" value = "0.25"/>
+				<float name = "Soldiers" value = "0.5"/>
+				<integer name = "MinSeamen" value = "80"/>
+				<integer name = "MinPilots" value = "20"/>
+				<integer name = "MinEngineers" value = "200"/>
+				<integer name = "MinSoldiers" value = "200"/>
+			</object>
+
+		</object>
+
+		<!--Дефолтные состояния опций-->
+		<object name = "Options">
+			<boolean name = "Weather" value = "true"/>
+			<boolean name = "VisibleRange" value = "false"/>
+			<boolean name = "FindEnemyMsg" value = "true"/>
+			<boolean name = "AutoSaveOpt" value = "true"/>
+			<integer name = "AutoSave2Opt" value = "0"/>
+			<boolean name = "HistoryMessagesOpt" value = "false"/>
+			<boolean name = "GovTasksOpt" value = "true"/>
+			<boolean name = "FishIconsOpt" value = "true"/>
+			<boolean name = "BaseIconsOpt" value = "true"/>
+			<boolean name = "BaseFlagsOpt" value = "false"/>
+			<boolean name = "FishFlagsOpt" value = "false"/>
+			<boolean name = "ZoneNamesOpt" value = "true"/>
+			<boolean name = "ZBordersOpt" value = "true"/>
+			<boolean name = "ZonesOpt" value = "true"/>
+			<boolean name = "BigBattleOpt" value = "false"/>
+			<!-- <boolean name = "DiplomacyOpt" value = "true"/> -->
+		</object>
+
+		<object name = "MessageManager">
+
+			<!-- Дефолтные состояния опций сообщений -->
+			<object name = "DefaultOptions">
+				<string name = "General" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "GovernmentTaskIssued" value = "SHOW_MSG_BOX, STOP_TIME, WRITE_MESSAGE_TO_LOG"/>
+				<string name = "GovernmentTaskCompleted" value = "SHOW_MSG_BOX, STOP_TIME, WRITE_MESSAGE_TO_LOG"/>
+				<string name = "HistoricalEvent" value = "SHOW_MSG_BOX, STOP_TIME, WRITE_MESSAGE_TO_LOG"/>
+				<string name = "ProductionCompleted" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "ResearchCompleted" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "EnemyDetection" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "AirplaneCrash" value = "WRITE_MESSAGE_TO_LOG, SHOW_IN_RED_COLOR"/>
+				<string name = "LoadingCompleted" value = "STOP_TIME, IMPORTANT"/>
+				<string name = "PersonMissed" value = "WRITE_MESSAGE_TO_LOG, STOP_TIME, IMPORTANT"/>
+				<string name = "BuildingCompleted" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "MassDestructionWpnUsed" value = "WRITE_MESSAGE_TO_LOG, SHOW_IN_RED_COLOR"/>
+				<string name = "WarBegins" value = "SHOW_MSG_BOX, STOP_TIME, WRITE_MESSAGE_TO_LOG"/>
+				<string name = "UnitUpgradeCompleted" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "ZoneStatusChanged" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "NewTechForPurchase" value = "WRITE_MESSAGE_TO_LOG, STOP_TIME, IMPORTANT"/>
+				<string name = "MissileStrike" value = "WRITE_MESSAGE_TO_LOG"/>
+				<string name = "CycloneLostsStatistic" value = "SHOW_MSG_BOX, STOP_TIME, WRITE_MESSAGE_TO_LOG"/>
+			</object>
+
+			<!-- Звуки для сообщений -->
+			<object name = "Sounds">
+				<string name = "ProductionCompleted" value = "ProductionDone"/>
+				<string name = "ResearchCompleted" value = "ResearchDone"/>
+				<string name = "EnemyDetection" value = "EnemyDetection"/>
+			</object>
+
+			<!-- Картинки MsgBox'ов для сообщений -->
+			<object name = "Pictures">
+				<string name = "EnemyDetection" value = "FoundEnemy"/>
+			</object>
+
+		</object> <!-- MessageManager -->
+
+		<!--Дефолтные состояния опций баз-->
+		<object name = "BaseOptions">
+			<boolean name = "MoneyLevelOpt" value = "true"/>
+			<float name = "MoneyLevel" value = "10000"/>
+		</object>
+
+	</object>
+</root>

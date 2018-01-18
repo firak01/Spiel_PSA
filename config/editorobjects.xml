@@ -1,0 +1,361 @@
+<?xml version = "1.0" encoding = "Windows-1251"?>
+<!-- Copyright (c)2004 Lesta Studio -->
+<root>
+	<object name="Objects">
+		<object name="projector_ground">
+			<string name="Template" value="projector_ground" />
+		</object>
+		<object name="pu_v2">
+			<string name="Template" value="pu_v2" />
+		</object>
+		<object name="pu_v1">
+			<string name="Template" value="pu_v1" />
+		</object>
+		<object name="PU_Rheintochter">
+			<string name="Template" value="PU_Rheintochter" />
+		</object>
+		<object name="Beacon">
+			<string name="Template" value="beacon" />
+		</object>
+		<object name="Black Barrel">
+			<string name="Template" value="bochka_black" />
+		</object>
+		<object name="Red Barrel">
+			<string name="Template" value="bochka_red" />
+		</object>
+		<object name="Bunker">
+			<string name="Template" value="bunker" />
+		</object>
+		<object name="Bus">
+			<string name="Template" value="bus" />
+		</object>
+		<object name="Big Cistern">
+			<string name="Template" value="cistern_big" />
+		</object>
+		<object name="Small Cistern">
+			<string name="Template" value="cistern_small" />
+		</object>
+		<object name="Big Watchtower">
+			<string name="Template" value="CT_big" />
+		</object>
+		<object name="Classic Watchtower">
+			<string name="Template" value="CT_Classic" />
+		</object>
+		<object name="Ficus">
+			<string name="Template" value="ficus" />
+		</object>
+		<object name="Big Hangar">
+			<string name="Template" value="hangar_big" />
+		</object>
+		<object name="Medium Hangar">
+			<string name="Template" value="hangar_middle" />
+		</object>
+		<object name="Small Hangar">
+			<string name="Template" value="hangar_small" />
+		</object>
+		<object name="Japanese Hangar 1">
+			<string name="Template" value="hangar1_jap" />
+		</object>
+		<object name="Japanese Hangar 2">
+			<string name="Template" value="hangar2_jap" />
+		</object>
+		<object name="Hotel">
+			<string name="Template" value="hotel" />
+		</object>
+		<object name="House 1">
+			<string name="Template" value="house" />
+		</object>
+		<object name="House 2">
+			<string name="Template" value="house1a" />
+		</object>
+		<object name="Church">
+			<string name="Template" value="kostel" />
+		</object>
+		<object name="Lorry">
+			<string name="Template" value="lorry" />
+		</object>
+		<object name="Monstera Plant">
+			<string name="Template" value="monstera" />
+		</object>
+		<object name="Native Hut">
+			<string name="Template" value="NativeHut" />
+		</object>
+		<object name="Oil Rig">
+			<string name="Template" value="oil_tower" />
+		</object>
+		<object name="Palm Plant">
+			<string name="Template" value="palm" />
+		</object>
+		<object name="Banana Palm Plant">
+			<string name="Template" value="palm_banan" />
+		</object>
+		<object name="Radar">
+			<string name="Template" value="radar" />
+		</object>
+		<object name="Town Hall">
+			<string name="Template" value="ratusha" />
+		</object>
+		<object name="Tent">
+			<string name="Template" value="tent" />
+		</object>
+		<object name="US Army Jeep">
+			<string name="Template" value="willys" />
+		</object>
+		<object name="Water Tower">
+			<string name="Template" value="water_tower" />
+		</object>
+		<object name="Small Boat">
+			<string name="Template" value="boat_small" />
+		</object>
+		<object name="Cinema">
+			<string name="Template" value="cinema" />
+		</object>
+		<object name="Gun 01">
+			<string name="Template" value="pushka_01" />
+		</object>
+		<object name="Gun 02">
+			<string name="Template" value="pushka_02" />
+		</object>
+		<object name="Native Hut 2">
+			<string name="Template" value="NativeHut_a" />
+		</object>
+		<object name="SmallBoat">
+			<string name="Template" value="boat_small" />
+		</object>
+		<object name="Medium Cistern">
+			<string name="Template" value="cistern_aver" />
+		</object>
+		<object name="Hospital">
+			<string name="Template" value="hospital" />
+		</object>
+		<object name="Hotel 2">
+			<string name="Template" value="hotel2" />
+		</object>
+		<object name="City House">
+			<string name="Template" value="city_house" />
+		</object>
+		<object name="Chiha Tank">
+			<string name="Template" value="tank_chiha" />
+		</object>
+		<object name="Sherman Tank">
+			<string name="Template" value="tank_sherman" />
+		</object>
+		<object name="Pagoda">
+			<string name="Template" value="pagoda" />
+		</object>
+		<object name="Cran">
+			<string name="Template" value="kran" />
+		</object>
+		<object name="Camouflage">
+			<string name="Template" value="tent_mask" />
+		</object>
+		<object name="Japanese Jeep">
+			<string name="Template" value="jeep_japan" />
+		</object>
+		<object name="Japanese Lorry">
+			<string name="Template" value="lorry_japan" />
+		</object>
+		<object name="Big Bunker">
+			<string name="Template" value="bunker_big" />
+		</object>
+		<object name="Marketplace">
+			<string name="Template" value="market" />
+		</object>
+		<object name="Trailer">
+			<string name="Template" value="pricep" />
+		</object>
+		<object name="Trailer 2">
+			<string name="Template" value="pricep_flank" />
+		</object>
+		<object name="Pine">
+			<string name="Template" value="sosna" />
+		</object>
+		<object name="Cedar">
+			<string name="Template" value="kedr" />
+		</object>
+		<object name="Bridge">
+			<string name="Template" value="bridge" />
+		</object>
+		<object name="Concrete Mooring Line A">
+			<string name="Template" value="concrete_mooring_line_a" />
+		</object>
+		<object name="Concrete Mooring Line B">
+			<string name="Template" value="concrete_mooring_line_b" />
+		</object>
+		<object name="Concrete Mooring Line C">
+			<string name="Template" value="concrete_mooring_line_c" />
+		</object>
+		<object name="Concrete Mooring Line D">
+			<string name="Template" value="concrete_mooring_line_d" />
+		</object>
+		<object name="Bamboo Mooring Line A">
+			<string name="Template" value="bambuk_mooring_line_a" />
+		</object>
+		<object name="Bamboo Mooring Line B">
+			<string name="Template" value="bambuk_mooring_line_b" />
+		</object>
+		<object name="Bamboo Mooring Line C">
+			<string name="Template" value="bambuk_mooring_line_c" />
+		</object>
+		<object name="Bamboo Mooring Line D">
+			<string name="Template" value="bambuk_mooring_line_d" />
+		</object>
+		<object name="Sakura">
+			<string name="Template" value="sakura" />
+		</object>
+		<object name="Command Point">
+			<string name="Template" value="comander_point" />
+		</object>
+		<object name="City House A">
+			<string name="Template" value="city_house_a" />
+		</object>
+		<object name="chouse_1storey">
+			<string name="Template" value="chouse_1storey" />
+		</object>
+		<object name="chouse_1storeystep">
+			<string name="Template" value="chouse_1storeystep" />
+		</object>
+		<object name="chouse_2storey">
+			<string name="Template" value="chouse_2storey" />
+		</object>
+		<object name="chouse_3storey">
+			<string name="Template" value="chouse_3storey" />
+		</object>
+		<object name="chouse2_1storey">
+			<string name="Template" value="chouse2_1storey" />
+		</object>
+		<object name="chouse2_2storey">
+			<string name="Template" value="chouse2_2storey" />
+		</object>
+		<object name="chouse2_3storey">
+			<string name="Template" value="chouse2_3storey" />
+		</object>
+		<object name="f_big">
+			<string name="Template" value="f_big" />
+		</object>
+		<object name="f_ceh_back">
+			<string name="Template" value="f_ceh_back" />
+		</object>
+		<object name="f_ceh_middle">
+			<string name="Template" value="f_ceh_middle" />
+		</object>
+		<object name="f_coner">
+			<string name="Template" value="f_coner" />
+		</object>
+		<object name="f_coner_middle">
+			<string name="Template" value="f_coner_middle" />
+		</object>
+		<object name="f_conv_back">
+			<string name="Template" value="f_conv_back" />
+		</object>
+		<object name="f_conv_backdoor">
+			<string name="Template" value="f_conv_backdoor" />
+		</object>
+		<object name="f_conv_middle">
+			<string name="Template" value="f_conv_middle" />
+		</object>
+		<object name="f_middle">
+			<string name="Template" value="f_middle" />
+		</object>
+		<object name="f_small">
+			<string name="Template" value="f_small" />
+		</object>
+		<object name="f_tube">
+			<string name="Template" value="f_tube" />
+		</object>
+		<object name="f_tunel">
+			<string name="Template" value="f_tunel" />
+		</object>
+		<object name="Palm Forest">
+			<string name="Template" value="les_palm" />
+		</object>
+		<object name="Pine Forest">
+			<string name="Template" value="les_pine" />
+		</object>
+		<object name="lorry_tent">
+			<string name="Template" value="lorry_tent" />
+		</object>
+		<object name="Fence">
+			<string name="Template" value="fence" />
+		</object>
+		<object name="podlozhka_fabric">
+			<string name="Template" value="podlozhka_fabric" />
+		</object>
+		<object name="-=DEREVO=-">
+			<string name="Template" value="derevo" />
+		</object>
+		<object name="Stone Bridge">
+			<string name="Template" value="bridge_stone" />
+		</object>
+		<object name="Training Ground">
+			<string name="Template" value="poligon" />
+		</object>
+		<object name="Iron Container 1">
+			<string name="Template" value="iron_conteiner_1" />
+		</object>
+		<object name="Iron Container 2">
+			<string name="Template" value="iron_conteiner_2" />
+		</object>
+		<object name="Iron Container 3">
+			<string name="Template" value="iron_conteiner_3" />
+		</object>
+		<object name="Wood Container">
+			<string name="Template" value="wood_conteiner" />
+		</object>
+		<object name="city_block01">
+			<string name="Template" value="city_block01" />
+		</object>
+		<object name="city_block02">
+			<string name="Template" value="city_block02" />
+		</object>
+		<object name="city_block03">
+			<string name="Template" value="city_block03" />
+		</object>
+		<object name="city_block04">
+			<string name="Template" value="city_block04" />
+		</object>
+		<object name="city_block05">
+			<string name="Template" value="city_block05" />
+		</object>
+<object name="city_block_wood01">
+			<string name="Template" value="city_block_wood01" />
+		</object>
+		<object name="city_block_wood02">
+			<string name="Template" value="city_block_wood02" />
+		</object>
+		<object name="city_block_wood03">
+			<string name="Template" value="city_block_wood03" />
+		</object>
+		<object name="city_block_wood04">
+			<string name="Template" value="city_block_wood04" />
+		</object>
+		<object name="city_block_wood05">
+			<string name="Template" value="city_block_wood05" />
+		</object>
+		<object name="city_block_usa_a">
+			<string name="Template" value="city_block_usa_a" />
+		</object>
+		<object name="city_block_usa_b">
+			<string name="Template" value="city_block_usa_b" />
+		</object>
+		<object name="city_block_usa_c">
+			<string name="Template" value="city_block_usa_c" />
+		</object>
+		<object name="city_block_usa_d">
+			<string name="Template" value="city_block_usa_d" />
+		</object>
+		<object name="city_block_usa_e">
+			<string name="Template" value="city_block_usa_e" />
+		</object>
+		<object name="big_house_usa_a">
+			<string name="Template" value="big_house_usa_a" />
+		</object>
+		<object name="big_house_usa_b">
+			<string name="Template" value="big_house_usa_b" />
+		</object>
+		<object name="big_house_usa_c">
+			<string name="Template" value="big_house_usa_c" />
+		</object>
+
+	</object>
+</root>

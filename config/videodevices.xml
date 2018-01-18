@@ -1,0 +1,258 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<root>
+	<object name = "Vendors">
+		<object name = "10DE">
+			<string name = "VendorName" value = "nVidia">
+			<object name = "DeviceList">
+				<object name = "0280" />
+					<string name = "DeviceName" value = "GeForce4 Ti 4800">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0281" />
+					<string name = "DeviceName" value = "GeForce4 Ti 4200 with AGP8X">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0282" />
+					<string name = "DeviceName" value = "GeForce4 Ti 4800 SE">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0301" />
+					<string name = "DeviceName" value = "GeForce FX 5800 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0302" />
+					<string name = "DeviceName" value = "GeForce FX 5800">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0311" />
+					<string name = "DeviceName" value = "GeForce FX 5600 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0312" />
+					<string name = "DeviceName" value = "GeForce FX 5600">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0314" />
+					<string name = "DeviceName" value = "GeForce FX 5600XT">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0320" />
+					<string name = "DeviceName" value = "GeForce FX 5200">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0321" />
+					<string name = "DeviceName" value = "GeForce FX 5200 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0322" />
+					<string name = "DeviceName" value = "GeForce FX 5200">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0323" />
+					<string name = "DeviceName" value = "GeForce FX 5200LE">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0326" />
+					<string name = "DeviceName" value = "GeForce FX 5500">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0327" />
+					<string name = "DeviceName" value = "GeForce FX 5100">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0330" />
+					<string name = "DeviceName" value = "GeForce FX 5900 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0331" />
+					<string name = "DeviceName" value = "GeForce FX 5900">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0332" />
+					<string name = "DeviceName" value = "GeForce FX 5900XT">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0333" />
+					<string name = "DeviceName" value = "GeForce FX 5950 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0334" />
+					<string name = "DeviceName" value = "GeForce FX 5900ZT">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0341" />
+					<string name = "DeviceName" value = "GeForce FX 5700 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0342" />
+					<string name = "DeviceName" value = "GeForce FX 5700">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0343" />
+					<string name = "DeviceName" value = "GeForce FX 5700LE">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0344" />
+					<string name = "DeviceName" value = "GeForce FX 5700VE">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0040" />
+					<string name = "DeviceName" value = "GeForce 6800 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0041" />
+					<string name = "DeviceName" value = "GeForce 6800">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0042" />
+					<string name = "DeviceName" value = "GeForce 6800 LE">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0045" />
+					<string name = "DeviceName" value = "GeForce 6800 GT">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00C1" />
+					<string name = "DeviceName" value = "GeForce 6800">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00C2" />
+					<string name = "DeviceName" value = "GeForce 6800 LE">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0140" />
+					<string name = "DeviceName" value = "GeForce 6600 GT">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0141" />
+					<string name = "DeviceName" value = "GeForce 6600">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0145" />
+					<string name = "DeviceName" value = "GeForce 6610 XL">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "014F" />
+					<string name = "DeviceName" value = "GeForce 6200">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0161" />
+					<string name = "DeviceName" value = "GeForce 6200 TurboCache(TM)">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0211" />
+					<string name = "DeviceName" value = "GeForce 6800">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0212" />
+					<string name = "DeviceName" value = "GeForce 6800 LE">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0215" />
+					<string name = "DeviceName" value = "GeForce 6800 GT">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00F0" />
+					<string name = "DeviceName" value = "GeForce 6800">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00F1" />
+					<string name = "DeviceName" value = "GeForce 6600 GT">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00F2" />
+					<string name = "DeviceName" value = "GeForce 6600">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00F3" />
+					<string name = "DeviceName" value = "GeForce 6200">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00F9" />
+					<string name = "DeviceName" value = "GeForce 6800">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00FA" />
+					<string name = "DeviceName" value = "GeForce PCX 5750">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00FB" />
+					<string name = "DeviceName" value = "GeForce PCX 5900">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00FC" />
+					<string name = "DeviceName" value = "GeForce PCX 5300">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "00FF" />
+					<string name = "DeviceName" value = "GeForce PCX 4300">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0286" />
+					<string name = "DeviceName" value = "GeForce4 4200 Go">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "031A" />
+					<string name = "DeviceName" value = "GeForce FX Go5600">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "031B" />
+					<string name = "DeviceName" value = "GeForce FX Go5650">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0324" />
+					<string name = "DeviceName" value = "GeForce FX Go5200">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0325" />
+					<string name = "DeviceName" value = "GeForce FX Go5250">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0328" />
+					<string name = "DeviceName" value = "GeForce FX Go5200 32M/64M">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "032C" />
+					<string name = "DeviceName" value = "GeForce FX Go53xx">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "032D" />
+					<string name = "DeviceName" value = "GeForce FX Go5100">
+					<boolean name = "EnableAdvancedWater" value = "false" />
+				</object>
+				<object name = "0347" />
+					<string name = "DeviceName" value = "GeForce FX Go5700">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0348" />
+					<string name = "DeviceName" value = "GeForce FX Go5700">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00C8" />
+					<string name = "DeviceName" value = "GeForce Go 6800">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "00C9" />
+					<string name = "DeviceName" value = "GeForce Go 6800 Ultra">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0144" />
+					<string name = "DeviceName" value = "GeForce Go 6600">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0148" />
+					<string name = "DeviceName" value = "GeForce Go 6600">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0164" />
+					<string name = "DeviceName" value = "GeForce Go 6200">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+				<object name = "0167" />
+					<string name = "DeviceName" value = "GeForce Go 6200">
+					<boolean name = "EnableAdvancedWater" value = "true" />
+				</object>
+			</object>
+		</object>
+	</object>
+</root>

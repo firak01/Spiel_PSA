@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "Windows-1251"?>
+<!-- Copyright (c)2004 Lesta Studio -->
+<root>
+	<object name = "Config">
+		<boolean name = "LoadAllMeshesAtStartup" value = "false"/>
+		<boolean name = "LoadUnitsFromMap" value = "true"/>
+		<float name = "HintDelay" value = "1.0"/>
+		<string name = "Joystick" value = "None"/>
+		<boolean name = "UseRenderChains" value = "true" />
+
+		<include file = "../config/ldrcfg.xml"/>
+
+		<!-- Конфигурация главного меню. -->
+		<include file = "../config/mmcfg.xml"/>
+
+		<!-- Конфигурация тактического уровня. -->
+		<include file = "../config/tlcfg.xml"/>
+		
+		<!-- Конфигурация стратегического уровня. -->
+		<include file = "../config/slcfg.xml"/>
+		
+		<!--Основные параметы игры-->
+		<string name = "GameParams" value = "res://GameParams.xml"/>
+	</object>
+</root>

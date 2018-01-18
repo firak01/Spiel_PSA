@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<object name="Media">
+		<!-- Ingame music for various nations -->
+		<object name="BackgroundMusic">
+			<boolean name="Enabled" value="true" />
+			<object name="Japan">
+				<string name="track1" value="../data/music/kilhmar.ogg" />
+			</object>
+			<object name="USA">
+				<string name="track1" value="../data/music/kilhmar.ogg" />
+			</object>
+			<object name="England">
+				<string name="track1" value="../data/music/kilhmar.ogg" />
+			</object>
+			<!-- Music for winning and loosing conditions -->
+			<object name="USA_Win">
+				<string name="track1" value="../data/music/am_gimn.ogg" />
+			</object>
+			<object name="USA_Lose">
+				<string name="track1" value="../data/music/am_tragic.ogg" />
+			</object>
+			<object name="JAP_Win">
+				<string name="track1" value="../data/music/jp_gimn.ogg" />
+			</object>
+			<object name="JAP_Lose">
+				<string name="track1" value="../data/music/jp_battle.ogg" />
+			</object>
+			<object name="ENG_Win">
+				<string name="track1" value="../data/music/am_gimn.ogg" />
+			</object>
+			<object name="ENG_Lose">
+				<string name="track1" value="../data/music/am_tragic.ogg" />
+			</object>
+		</object>
+		<!-- Strategy campaign outros -->
+		<object name="FinalVideo">
+			<object name="USA_Win">
+				<string name="Path" value="../data/video/Victory_USA.wmv" />
+				<string name="OggPath" value="../data/video/Victory_USA.ogg" />
+			</object>
+			<object name="ENG_Win">
+				<string name="Path" value="../data/video/Victory_England.wmv" />
+				<string name="OggPath" value="../data/video/Victory_UK.ogg" />
+			</object>
+			<object name="JAP_Win">
+				<string name="Path" value="../data/video/Victory_Japan.wmv" />
+				<string name="OggPath" value="../data/video/Victory_Japan.ogg" />
+			</object>
+		</object>
+		<string name="TestVolumeSound" value="common/testsnd" />
+		<boolean name="StartUpVideoEnable" value="true" />
+		<string name="VideoDecoder" value="DirectShow" /> <!-- Available options: Theora, DirectShow -->
+		<object name="StartUpVideo">
+			<!-- Starting video -->
+			<object name="Clip0">
+				<string name="Path" value="../data/video/esrb.wmv" />
+				<string name="OggPath" value="../data/video/esrb.ogg" />
+				<integer name="Order" value="0" />
+			</object>
+			<object name="Clip1">
+				<string name="Path" value="../data/video/buka.wmv" />
+				<string name="OggPath" value="../data/video/buka.ogg" />
+				<integer name="Order" value="1" />
+			</object>
+			<!-- Uncomment clip and change filename to play international publisher logo motion -->
+			<object name="Clip2">
+				<string name="Path" value="../data/video/cdv.wmv" />
+				<string name="OggPath" value="../data/video/cdv.ogg" />
+				<integer name="Order" value="2" />
+			</object>
+			<!--
+            <object name="Clip3">
+                <string name="Path" value="../data/video/nvidia.wmv"/>
+                <integer name="Order" value="3"/>
+            </object>
+            -->
+			<object name="Clip4">
+				<string name="Path" value="../data/video/intro.wmv" />
+				<string name="OggPath" value="../data/video/intro.ogg" />
+				<integer name="Order" value="4" />
+			</object>
+		</object>
+		<!-- Sounds for tactical level below -->
+		<object name="TacticLevelAttenuations">
+			<!-- Various FX sounds here -->
+			<object name="Common">
+				<float name="Outside" value="1.0" />
+				<float name="InCockpit" value="0.4" />
+				<float name="InTurret" value="0.55" />
+				<float name="InBombBay" value="0.6" />
+				<float name="MyEnginInCockpit" value="0.6" />
+				<float name="MyEnginInTurret" value="0.7" />
+				<float name="MyEnginInBombBay" value="0.8" />
+			</object>
+			<object name="Guns">
+				<float name="Big" value="1.0" />
+				<float name="Medium" value="0.7" />
+				<float name="Small" value="0.6" />
+				<float name="Torpedo" value="0.5" />
+			</object>
+			<object name="Explosions">
+				<float name="Nuclear" value="1.0" />
+				<float name="GroundBig" value="1.0" />
+				<float name="GroundMed" value="1.0" />
+				<float name="GroundSmall" value="1.0" />
+				<float name="GroundBio" value="1.0" />
+				<float name="MissileBig" value="1.0" />
+				<float name="MissileMed" value="1.0" />
+				<float name="MissileSmall" value="1.0" />
+				<float name="WaterBig" value="0.7" />
+				<float name="WaterMed" value="0.75" />
+				<float name="WaterSmall" value="0.5" />
+				<float name="WaterSplash" value="0.2" />
+				<float name="WaterBio" value="0.75" />
+			</object>
+			<object name="DropObject">
+				<float name="Missile" value="1.0" />
+				<float name="Torpedo" value="1.0" />
+				<float name="Bomb" value="1.0" />
+			</object>
+			<object name="Misc">
+				<float name="AirplaneFall" value="0.6" />
+				<float name="AirplaneEngine" value="1.0" />
+				<float name="ShipEngine" value="0.4" />
+				<float name="AirUnitPlaySoundOnEvent" value="1.0" />
+				<float name="NoPatrons" value="0.5" />
+				<float name="Reload" value="0.5" />
+				<float name="BulletHit" value="1.0" />
+				<float name="PilotSpeech" value="0.3" />
+				<float name="OnMovePart" value="0.6" />
+				<float name="OnSelect" value="0.5" />
+				<float name="Desant" value="1.0" />
+				<float name="GameOver" value="1.0" />
+				<float name="SinkingBubbles" value="0.9" />
+				<float name="ShipBurn" value="1.0" />
+			</object>
+			<object name="Weather">
+				<float name="Wind_Small" value="0.3" />
+				<float name="Wind_Medium" value="0.45" />
+				<float name="Wind_Big" value="0.5" />
+				<float name="Rain_Small" value="0.3" />
+				<float name="Rain_Medium" value="0.4" />
+				<float name="Rain_Big" value="0.5" />
+				<float name="Thunder" value="1.0" />
+				<float name="Sea_Small" value="0.6" />
+				<float name="Sea_Medium" value="0.6" />
+				<float name="Sea_Big" value="0.6" />
+				<float name="Surf" value="0.6" />
+				<float name="Terrain" value="1.0" />
+			</object>
+		</object>
+		<object name="SoundFX">
+			<integer name="MaxCountBuffers" value="32" />
+			<float name="CriticalDistance" value="2600." />
+			<boolean name="SFXEnabled" value="true" />
+			<boolean name="SFX3DEnabled" value="true" />
+			<boolean name="SoftwareBuffers" value="false" />
+			<object name="SinkingBubbles">
+				<integer name="SndCount" value="10" />
+				<string name="Path" value="Bubbles/bubbles" />
+			</object>
+			<object name="ShipBurn">
+				<integer name="SndCount" value="1" />
+				<string name="Path" value="Burn/burn" />
+			</object>
+			<object name="Weather">
+				<string name="Wind_Small" value="Weather/wind_00" />
+				<string name="Wind_Medium" value="Weather/wind_01" />
+				<string name="Wind_Big" value="Weather/wind_02" />
+				<float name="WindHeightMin" value="0" />
+				<float name="WindHeightMax" value="3000" />
+				<string name="Rain_Small" value="Weather/rain_00" />
+				<string name="Rain_Medium" value="Weather/rain_01" />
+				<string name="Rain_Big" value="Weather/rain_02" />
+				<object name="Thunder">
+					<float name="PeriodRndFactor" value="0.003" />
+					<integer name="SndCount" value="6" />
+					<string name="Path" value="Weather/thunder_" />
+				</object>
+				<object name="Surface">
+					<float name="HeightMax" value="300" />
+					<float name="SurfMaxDistance" value="1000" />
+					<float name="NonSurfMinDistance" value="0" />
+					<float name="NonSurfMaxDistance" value="1000" />
+					<string name="Sea_Small" value="Weather/sea_00" />
+					<string name="Sea_Medium" value="Weather/sea_01" />
+					<string name="Sea_Big" value="Weather/sea_02" />
+					<string name="Surf" value="Weather/surf" />
+					<string name="Terrain" value="Weather/terrain" />
+				</object>
+			</object>
+			<object name="DropObject">
+				<string name="Torpedo" value="common/Drop/TorpedoDrop" />
+				<string name="Bomb" value="common/Drop/BombDrop" />
+				<string name="Missile" value="common/Drop/MissileDrop" />
+			</object>
+			<object name="Send">
+				<integer name="SndCount" value="1" />
+				<string name="Path" value="common/send/send" />
+			</object>
+			<object name="Attack">
+				<object name="usa">
+					<integer name="SndCount" value="6" />
+					<string name="Path" value="common/usa/attack/attack" />
+				</object>
+				<object name="japan">
+					<integer name="SndCount" value="5" />
+					<string name="Path" value="common/japan/attack/attack" />
+				</object>
+				<object name="eng">
+					<integer name="SndCount" value="5" />
+					<string name="Path" value="common/eng/attack/attack" />
+				</object>
+				<object name="USSR">
+					<integer name="SndCount" value="6" />
+					<string name="Path" value="common/USSR/attack/attack" />
+				</object>
+				<object name="Germany">
+					<integer name="SndCount" value="6" />
+					<string name="Path" value="common/Germany/attack/attack" />
+				</object>
+			</object>
+			<object name="BulletHit">
+				<integer name="SndCount" value="3" />
+				<string name="Path" value="common/BulletHit" />
+			</object>
+			<string name="DesantSnd" value="common/DesantSnd" />
+			<string name="DesantSndUSA" value="TL/US_troops_landed" />
+			<string name="DesantSndJapan" value="TL/J_troops_landed" />
+			<object name="Airplanes">
+				<object name="Downfall">
+					<string name="Down" value="common/Airplane/downfall" />
+					<string name="DownBig" value="common/Airplane/downfall_big" />
+					<string name="DownMedium" value="common/Airplane/downfall_med" />
+					<string name="DownSmall" value="common/Airplane/downfall_small" />
+					<float name="MaxSpeed" value="1000" />
+					<float name="NominalSpeed" value="500" />
+					<float name="MaxSpeedForVolume" value="100" />
+				</object>
+			</object>
+			<object name="Japan">
+				<string name="VicDesant" value="common/Japan/victoryDesant" />
+				<string name="DesDesant" value="common/Japan/destroyDesant" />
+				<object name="Select">
+					<string name="Path" value="common/Japan/select/" />
+					<object name="SndCountShip">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShip" />
+					</object>
+					<object name="SndCountShipSub">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShipSub" />
+					</object>
+					<object name="SndCountPlane">
+						<integer name="SndCount" value="3" />
+						<string name="SndName" value="Select" />
+					</object>
+					<object name="SndAAGun">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_PVO" />
+					</object>
+					<object name="SndArtillery">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_landgun" />
+					</object>
+					<object name="SndMissile">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_Rockets" />
+					</object>
+				</object>
+				<object name="Plane">
+					<string name="NormalEngine" value="common/japan/Plane/Engine_normal" />
+					<string name="BadEngine" value="common/japan/Plane/Engine_bad" />
+					<string name="Down" value="common/japan/Plane/Down" />
+					<string name="MachineGun" value="common/japan/Plane/Gun2" />
+					<string name="GearUp" value="common/japan/Plane/Gear_loop" />
+					<string name="GearUpUnLock" value="common/japan/Plane/gear_down_start" />
+					<string name="GearUpLock" value="common/japan/Plane/gear_down_finish" />
+					<string name="GearDown" value="common/japan/Plane/Gear_loop" />
+					<string name="GearDownUnLock" value="common/japan/Plane/gear_up_start" />
+					<string name="GearDownLock" value="common/japan/Plane/gear_up_finish" />
+					<string name="BayCloseOpen" value="common/japan/Plane/bomb_bay_loop" />
+					<string name="FlapsDown" value="common/japan/Plane/flaps_loop" />
+					<string name="FlapsUp" value="common/japan/Plane/flaps_loop" />
+					<object name="Pilots">
+						<string name="Bomb_swoop" value="common/Japan/Plane/Pilots/eng/bomb_swoop_down" />
+						<string name="The_end" value="common/Japan/Plane/Pilots/eng/the_end" />
+						<string name="Look_target" value="common/Japan/Plane/Pilots/eng/Look_target" />
+					</object>
+					<object name="Pilots0">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/on_direct_course" />
+					</object>
+					<object name="Pilots1">
+						<integer name="SndCount" value="7" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/bomber_over_target" />
+					</object>
+					<object name="Pilots2">
+						<integer name="SndCount" value="5" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/attack_begin" />
+					</object>
+					<object name="Pilots3">
+						<integer name="SndCount" value="7" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/bomber_throw_good" />
+					</object>
+					<object name="Pilots4">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/enemy_attack" />
+					</object>
+					<object name="Pilots5">
+						<integer name="SndCount" value="3" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/return_to_base" />
+					</object>
+					<object name="Pilots6">
+						<integer name="SndCount" value="5" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/airplane_down" />
+					</object>
+					<object name="Pilots7">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/Japan/Plane/Pilots/eng/kamikadze_banzai" />
+					</object>
+				</object>
+			</object>
+			<object name="USA">
+				<string name="VicDesant" value="common/USA/victoryDesant" />
+				<string name="DesDesant" value="common/USA/destroyDesant" />
+				<object name="Select">
+					<string name="Path" value="common/USA/select/" />
+					<object name="SndCountShip">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShip" />
+					</object>
+					<object name="SndCountShipSub">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShipSub" />
+					</object>
+					<object name="SndCountPlane">
+						<integer name="SndCount" value="5" />
+						<string name="SndName" value="Select" />
+					</object>
+					<object name="SndAAGun">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_PVO" />
+					</object>
+					<object name="SndArtillery">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_landgun" />
+					</object>
+					<object name="SndMissile">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_Rockets" />
+					</object>
+				</object>
+				<object name="Plane">
+					<string name="NormalEngine" value="common/USA/Plane/Engine_normal" />
+					<string name="BadEngine" value="common/USA/Plane/Engine_bad" />
+					<string name="Down" value="common/USA/Plane/Down" />
+					<string name="MachineGun" value="common/USA/Plane/Gun2" />
+					<string name="GearUp" value="common/USA/Plane/Gear_loop" />
+					<string name="GearUpUnLock" value="common/USA/Plane/start_gear_up" />
+					<string name="GearUpLock" value="common/USA/Plane/finish_gear_up" />
+					<string name="GearDown" value="common/USA/Plane/Gear_loop" />
+					<string name="GearDownUnLock" value="common/USA/Plane/start_gear_down" />
+					<string name="GearDownLock" value="common/USA/Plane/finish_gear_down" />
+					<string name="BayCloseOpen" value="common/USA/Plane/Gear_loop" />
+					<string name="FlapsDown" value="common/USA/Plane/Gear_loop" />
+					<string name="FlapsUp" value="common/USA/Plane/Gear_loop" />
+					<object name="Pilots">
+						<string name="Bomb_swoop" value="common/USA/Plane/Pilots/eng/bomb_swoop_down" />
+						<string name="The_end" value="common/USA/Plane/Pilots/eng/the_end" />
+						<string name="Look_target" value="common/USA/Plane/Pilots/eng/Look_target" />
+					</object>
+					<object name="Pilots0">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/on_direct_course" />
+					</object>
+					<object name="Pilots1">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/bomber_over_target" />
+					</object>
+					<object name="Pilots2">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/attack_begin" />
+					</object>
+					<object name="Pilots3">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/bomber_throw_good" />
+					</object>
+					<object name="Pilots4">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/enemy_attack" />
+					</object>
+					<object name="Pilots5">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/return_to_base" />
+					</object>
+					<object name="Pilots6">
+						<integer name="SndCount" value="3" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/airplane_down" />
+					</object>
+					<object name="Pilots7">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/USA/Plane/Pilots/eng/kamikadze_banzai" />
+					</object>
+				</object>
+				<object name="Ship">
+					<string name="NormalEngine" value="common/USA/Ship/med_eng_normal" />
+					<string name="AntiAir" value="common/USA/Ship/antiair" />
+				</object>
+			</object>
+			<object name="USSR">
+				<string name="VicDesant" value="common/USSR/victoryDesant" />
+				<string name="DesDesant" value="common/USSR/destroyDesant" />
+				<object name="Select">
+					<string name="Path" value="common/USSR/select/" />
+					<object name="SndCountShip">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShip" />
+					</object>
+					<object name="SndCountShipSub">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShipSub" />
+					</object>
+					<object name="SndCountPlane">
+						<integer name="SndCount" value="5" />
+						<string name="SndName" value="Select" />
+					</object>
+					<object name="SndAAGun">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_PVO" />
+					</object>
+					<object name="SndArtillery">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_landgun" />
+					</object>
+					<object name="SndMissile">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_Rockets" />
+					</object>
+				</object>
+				<object name="Plane">
+					<string name="NormalEngine" value="common/USSR/Plane/Engine_normal" />
+					<string name="BadEngine" value="common/USSR/Plane/Engine_bad" />
+					<string name="Down" value="common/USSR/Plane/Down" />
+					<string name="MachineGun" value="common/USSR/Plane/Gun2" />
+					<string name="GearUp" value="common/USSR/Plane/Gear_loop" />
+					<string name="GearUpUnLock" value="common/USSR/Plane/start_gear_up" />
+					<string name="GearUpLock" value="common/USSR/Plane/finish_gear_up" />
+					<string name="GearDown" value="common/USSR/Plane/Gear_loop" />
+					<string name="GearDownUnLock" value="common/USSR/Plane/start_gear_down" />
+					<string name="GearDownLock" value="common/USSR/Plane/finish_gear_down" />
+					<string name="BayCloseOpen" value="common/USSR/Plane/Gear_loop" />
+					<string name="FlapsDown" value="common/USSR/Plane/Gear_loop" />
+					<string name="FlapsUp" value="common/USSR/Plane/Gear_loop" />
+					<object name="Pilots">
+						<string name="Bomb_swoop" value="common/USSR/Plane/Pilots/rus/bomb_swoop_down" />
+						<string name="The_end" value="common/USSR/Plane/Pilots/rus/the_end" />
+						<string name="Look_target" value="common/USSR/Plane/Pilots/rus/Look_target0" />
+					</object>
+					<object name="Pilots0">
+						<integer name="SndCount" value="3" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/on_direct_course" />
+					</object>
+					<object name="Pilots1">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/bomber_over_target" />
+					</object>
+					<object name="Pilots2">
+						<integer name="SndCount" value="10" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/attack_begin" />
+					</object>
+					<object name="Pilots3">
+						<integer name="SndCount" value="8" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/bomber_throw_good" />
+					</object>
+					<object name="Pilots4">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/enemy_attack" />
+					</object>
+					<object name="Pilots5">
+						<integer name="SndCount" value="3" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/return_to_base" />
+					</object>
+					<object name="Pilots6">
+						<integer name="SndCount" value="8" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/airplane_down" />
+					</object>
+					<object name="Pilots7">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/USSR/Plane/Pilots/rus/kamikadze_banzai" />
+					</object>
+				</object>
+				<object name="Ship">
+					<string name="NormalEngine" value="common/USSR/Ship/med_eng_normal" />
+					<string name="AntiAir" value="common/USSR/Ship/antiair" />
+				</object>
+			</object>
+			<object name="Germany">
+				<string name="VicDesant" value="common/Germany/victoryDesant" />
+				<string name="DesDesant" value="common/Germany/destroyDesant" />
+				<object name="Select">
+					<string name="Path" value="common/Germany/select/" />
+					<object name="SndCountShip">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShip" />
+					</object>
+					<object name="SndCountShipSub">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShipSub" />
+					</object>
+					<object name="SndCountPlane">
+						<integer name="SndCount" value="6" />
+						<string name="SndName" value="Select" />
+					</object>
+					<object name="SndAAGun">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_PVO" />
+					</object>
+					<object name="SndArtillery">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_landgun" />
+					</object>
+					<object name="SndMissile">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_Rockets" />
+					</object>
+				</object>
+				<object name="Plane">
+					<string name="NormalEngine" value="common/Germany/Plane/Engine_normal" />
+					<string name="BadEngine" value="common/Germany/Plane/Engine_bad" />
+					<string name="Down" value="common/Germany/Plane/Down" />
+					<string name="MachineGun" value="common/Germany/Plane/Gun2" />
+					<string name="GearUp" value="common/Germany/Plane/Gear_loop" />
+					<string name="GearUpUnLock" value="common/Germany/Plane/start_gear_up" />
+					<string name="GearUpLock" value="common/Germany/Plane/finish_gear_up" />
+					<string name="GearDown" value="common/Germany/Plane/Gear_loop" />
+					<string name="GearDownUnLock" value="common/Germany/Plane/start_gear_down" />
+					<string name="GearDownLock" value="common/Germany/Plane/finish_gear_down" />
+					<string name="BayCloseOpen" value="common/Germany/Plane/Gear_loop" />
+					<string name="FlapsDown" value="common/Germany/Plane/Gear_loop" />
+					<string name="FlapsUp" value="common/Germany/Plane/Gear_loop" />
+					<object name="Pilots">
+						<string name="Bomb_swoop" value="common/Germany/Plane/Pilots/grm/bomb_swoop_down" />
+						<string name="The_end" value="common/Germany/Plane/Pilots/grm/the_end" />
+						<string name="Look_target" value="common/Germany/Plane/Pilots/grm/Look_target0" />
+					</object>
+					<object name="Pilots0">
+						<integer name="SndCount" value="3" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/on_direct_course" />
+					</object>
+					<object name="Pilots1">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/bomber_over_target" />
+					</object>
+					<object name="Pilots2">
+						<integer name="SndCount" value="10" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/attack_begin" />
+					</object>
+					<object name="Pilots3">
+						<integer name="SndCount" value="6" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/bomber_throw_good" />
+					</object>
+					<object name="Pilots4">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/enemy_attack" />
+					</object>
+					<object name="Pilots5">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/return_to_base" />
+					</object>
+					<object name="Pilots6">
+						<integer name="SndCount" value="8" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/airplane_down" />
+					</object>
+					<object name="Pilots7">
+						<integer name="SndCount" value="1" />
+						<string name="Path" value="common/Germany/Plane/Pilots/grm/kamikadze_banzai" />
+					</object>
+				</object>
+				<object name="Ship">
+					<string name="NormalEngine" value="common/Germany/Ship/med_eng_normal" />
+					<string name="AntiAir" value="common/Germany/Ship/antiair" />
+				</object>
+			</object>
+			<object name="ENG">
+				<string name="VicDesant" value="common/USA/victoryDesant" />
+				<string name="DesDesant" value="common/USA/destroyDesant" />
+				<object name="Select">
+					<string name="Path" value="common/Eng/select/" />
+					<object name="SndCountShip">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShip" />
+					</object>
+					<object name="SndCountShipSub">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="selectShipSub" />
+					</object>
+					<object name="SndCountPlane">
+						<integer name="SndCount" value="5" />
+						<string name="SndName" value="Select" />
+					</object>
+					<object name="SndAAGun">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_PVO" />
+					</object>
+					<object name="SndArtillery">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_landgun" />
+					</object>
+					<object name="SndMissile">
+						<integer name="SndCount" value="1" />
+						<string name="SndName" value="select_Rockets" />
+					</object>
+				</object>
+				<object name="Plane">
+					<string name="NormalEngine" value="common/Eng/Plane/Engine_normal" />
+					<string name="BadEngine" value="common/Eng/Plane/Engine_bad" />
+					<string name="Down" value="common/Eng/Plane/Down" />
+					<string name="MachineGun" value="common/Eng/Plane/Gun2" />
+					<string name="GearUp" value="common/Eng/Plane/Gear_loop" />
+					<string name="GearUpUnLock" value="common/Eng/Plane/start_gear_up" />
+					<string name="GearUpLock" value="common/Eng/Plane/finish_gear_up" />
+					<string name="GearDown" value="common/Eng/Plane/Gear_loop" />
+					<string name="GearDownUnLock" value="common/Eng/Plane/start_gear_down" />
+					<string name="GearDownLock" value="common/Eng/Plane/finish_gear_down" />
+					<string name="BayCloseOpen" value="common/Eng/Plane/Gear_loop" />
+					<string name="FlapsDown" value="common/Eng/Plane/Gear_loop" />
+					<string name="FlapsUp" value="common/Eng/Plane/Gear_loop" />
+					<object name="Pilots">
+						<string name="Bomb_swoop" value="common/Eng/Plane/Pilots/eng/bomb_swoop_down" />
+						<string name="The_end" value="common/Eng/Plane/Pilots/eng/the_end" />
+						<string name="Look_target" value="common/Eng/Plane/Pilots/eng/Look_target" />
+					</object>
+					<object name="Pilots0">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/on_direct_course" />
+					</object>
+					<object name="Pilots1">
+						<integer name="SndCount" value="4" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/bomber_over_target" />
+					</object>
+					<object name="Pilots2">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/attack_begin" />
+					</object>
+					<object name="Pilots3">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/bomber_throw_good" />
+					</object>
+					<object name="Pilots4">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/enemy_attack" />
+					</object>
+					<object name="Pilots5">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/return_to_base" />
+					</object>
+					<object name="Pilots6">
+						<integer name="SndCount" value="3" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/airplane_down" />
+					</object>
+					<object name="Pilots7">
+						<integer name="SndCount" value="2" />
+						<string name="Path" value="common/Eng/Plane/Pilots/eng/kamikadze_banzai" />
+					</object>
+				</object>
+				<object name="Ship">
+					<string name="NormalEngine" value="common/Eng/Ship/med_eng_normal" />
+					<string name="AntiAir" value="common/Eng/Ship/antiair" />
+				</object>
+			</object>
+			<object name="Explosion">
+				<integer name="SndCount" value="7" />
+				<string name="Path" value="Explosion/explo" />
+			</object>
+			<object name="CommonAndMenus">
+				<string name="CloseMessageBox" value="SL/basic" />
+				<string name="GameMenuRestart" value="SL/basic" />
+				<string name="GameMenuSaveLoad" value="SL/basic" />
+				<string name="GameMenuOptions" value="SL/basic" />
+				<string name="GameMenuExitToMainMenu" value="SL/basic" />
+				<string name="GameMenuInfo" value="SL/basic" />
+				<string name="GameMenuCredits" value="SL/basic" />
+				<string name="GameMenuCreditsButtonExit" value="SL/basic" />
+				<string name="GameMenuExitActiveDlg" value="SL/basic" />
+				<string name="GameMenuOkActiveDlg" value="SL/basic" />
+				<string name="AdvOptionsOk" value="SL/basic" />
+				<string name="AdvOptionsChancel" value="SL/basic" />
+				<string name="AdvOptionsTabSwitch" value="SL/basic" />
+				<string name="AdvOptionsCheckBoxSwitch" value="SL/basic" />
+				<string name="AdvOptionsComboBoxSwitch" value="SL/basic" />
+				<string name="BasicOptionsCancel" value="SL/basic" />
+				<string name="BasicOptionsOk" value="SL/basic" />
+				<string name="BasicOptionsCheckBoxes" value="SL/basic" />
+				<string name="BasicOptionsAdvanced" value="SL/basic" />
+				<string name="BasicOptionsComboBoxSwitch" value="SL/basic" />
+				<string name="LoadMenuLoad" value="SL/basic" />
+				<string name="LoadMenuDelete" value="SL/basic" />
+				<string name="LoadMenuCancel" value="SL/basic" />
+				<string name="GameMenuMsgBoxExitYes" value="SL/basic" />
+			</object>
+			<!-- Звуки на cтратеге -->
+			<object name="StrategLevel">
+				<string name="BaseClick" value="SL/base_click" />
+				<object name="EnemyDetection">
+					<integer name="SndCount" value="7" />
+					<string name="SndName" value="SL/enemy_detection" />
+				</object>
+				<object name="BeginBattle">
+					<integer name="SndCount" value="6" />
+					<string name="SndName" value="SL/begin_battle" />
+				</object>
+				<object name="ProductionDone">
+					<integer name="SndCount" value="4" />
+					<string name="SndName" value="SL/production_done" />
+				</object>
+				<object name="ProductionDoneShips">
+					<integer name="SndCount" value="2" />
+					<string name="SndName" value="SL/production_done_ship" />
+				</object>
+				<object name="ProductionDonePlane">
+					<integer name="SndCount" value="2" />
+					<string name="SndName" value="SL/production_done_plane" />
+				</object>
+				<object name="ProductionDoneAmmo">
+					<integer name="SndCount" value="2" />
+					<string name="SndName" value="SL/production_done_ammo" />
+				</object>
+				<object name="EndBattle">
+					<integer name="SndCount" value="6" />
+					<string name="SndName" value="SL/end_battle" />
+				</object>
+				<object name="VictoryBattle">
+					<integer name="SndCount" value="5" />
+					<string name="SndName" value="SL/victory_battle" />
+				</object>
+				<object name="DefeatBattle">
+					<integer name="SndCount" value="6" />
+					<string name="SndName" value="SL/defeat_battle" />
+				</object>
+				<string name="ResearchDone" value="SL/research_done" />
+				<object name="Attack">
+					<integer name="SndCount" value="6" />
+					<string name="SndName" value="SL/attack" />
+				</object>
+				<object name="SubmarineSelect">
+					<integer name="SndCount" value="6" />
+					<string name="SndName" value="SL/submarine_select" />
+				</object>
+				<object name="AirplaneSelect">
+					<integer name="SndCount" value="6" />
+					<string name="SndName" value="SL/airplane_select" />
+				</object>
+				<object name="ShipSelect">
+					<integer name="SndCount" value="6" />
+					<string name="SndName" value="SL/ship_select" />
+				</object>
+				<object name="SendToPlanes">
+					<integer name="SndCount" value="3" />
+					<string name="SndName" value="SL/send_to_planes" />
+				</object>
+				<object name="SendToShips">
+					<integer name="SndCount" value="3" />
+					<string name="SndName" value="SL/send_to_ships" />
+				</object>
+				<string name="SendTo" value="SL/send_to" />
+				<string name="RusveltOnFirstJapanAttack" value="SL/rusvelt_on_first_japan_attack" />
+				<!-- Звуки переключения между закладками -->
+				<string name="leaf_bookmark0" value="SL/ambient/leaf_bookmark0" />
+				<string name="leaf_bookmark1" value="SL/ambient/leaf_bookmark1" />
+				<string name="leaf_bookmark2" value="SL/ambient/leaf_bookmark2" />
+				<!-- Фоновые звуки в закладках базы -->
+				<string name="AmbientBuilding" value="SL/ambient/buildings" />
+				<string name="AmbientFormations" value="SL/ambient/formation" />
+				<string name="AmbientInfo" value="SL/ambient/information" />
+				<string name="AmbientPeople" value="SL/ambient/people" />
+				<string name="AmbientStore" value="SL/ambient/warehouse" />
+				<!-- Фоновые звуки в закладках метрополии -->
+				<string name="AmbientProduction" value="SL/ambient/production" />
+				<string name="AmbientResources" value="SL/ambient/resources" />
+				<string name="AmbientTechnology" value="SL/ambient/technologies" />
+				<string name="AmbientForces" value="SL/ambient/troops" />
+				<!-- Звук выделения зоны на карте -->
+				<string name="ZoneSelect" value="SL/mark_region" />
+				<!-- Звуки изменения cкороcти игры -->
+				<string name="GameSpeedChangeTo0" value="SL/pause" />
+				<string name="GameSpeedChangeTo1" value="SL/min" />
+				<string name="GameSpeedChangeTo2" value="SL/med" />
+				<string name="GameSpeedChangeTo3" value="SL/max" />
+				<string name="GameSpeedChangeTo4" value="SL/max+" />
+				<!-- Сворачивание\разворачивание лога -->
+				<string name="HideHistoryLog" value="SL/close_map" />
+				<string name="ShowHistoryLog" value="SL/open_map" />
+				<string name="ShowTaskInfoOverlay" value="SL/basic" />
+				<string name="HideTaskInfoOverlay" value="SL/basic" />
+				<string name="HideMissionInfoOverlay" value="SL/basic" />
+				<string name="GameMenuRestart" value="SL/basic" />
+				<string name="GameMenuSaveLoad" value="SL/basic" />
+				<string name="GameMenuOptions" value="SL/basic" />
+				<string name="GameMenuExitToMainMenu" value="SL/basic" />
+				<!-- Показ\прятание окна наcтроек -->
+				<string name="ShowSettings" value="SL/strategy_level_settings" />
+				<string name="SettingsSwitchMode" value="SL/basic" />
+				<string name="SettingsOnChangeOption" value="SL/basic" />
+				<string name="SettingsOnChangeCombo" value="SL/basic" />
+				<string name="ShowDiplomacyWindow" value="SL/basic" />
+				<!-- Контекcтное меню базы -->
+				<string name="BasePopupFormations" value="SL/basic" />
+				<string name="BasePopupStore" value="SL/basic" />
+				<string name="BasePopupPeople" value="SL/basic" />
+				<string name="BasePopupBuildings" value="SL/basic" />
+				<string name="BasePopupFullAIEnable" value="SL/start_selfgovernment" />
+				<string name="BasePopupFullAIDisable" value="SL/start_selfgovernment" />
+				<string name="BasePopupMakeMainBase" value="SL/create_headbase" />
+				<!-- База, закладка ЗДАНИЯ -->
+				<string name="BaseBuildings_building" value="SL/basic" />
+				<string name="BaseBuildings_repair" value="SL/repair" />
+				<string name="BaseBuildings_upgrade" value="SL/basic" />
+				<!-- Управление приоритетами производcтв -->
+				<string name="PriorityClearWaitingAll" value="SL/unfreeze" />
+				<string name="PriorityClearWaiting" value="SL/unfreeze" />
+				<string name="PriorityWaitingAll" value="SL/freeze" />
+				<string name="PriorityWaiting" value="SL/freeze" />
+				<string name="PrioritySetImportant" value="SL/priority_mark" />
+				<string name="PriorityClearImportant" value="SL/priority_mark" />
+				<string name="PriorityRemoveFromQueue" value="SL/delete_from_turn" />
+				<string name="PriorityInc" value="SL/raise_priority" />
+				<string name="PriorityDec" value="SL/reduce_priority" />
+				<string name="PriorityMax" value="SL/max_priority" />
+				<string name="PriorityMin" value="SL/min_priority" />
+				<!-- Опции базы -->
+				<string name="BaseOptionsCheckBoxes" value="SL/basic" />
+				<string name="BaseOptionsIncScoutingPeriod" value="SL/basic" />
+				<string name="BaseOptionsIncBaseAttackPeriod" value="SL/basic" />
+				<string name="BaseOptionsIncFuelLevel" value="SL/basic" />
+				<string name="BaseOptionsIncMoneyLevel" value="SL/basic" />
+				<string name="BaseOptionsSetDefaults" value="SL/basic" />
+				<string name="BaseOptionsApplyForAllBases" value="SL/basic" />
+				<string name="BaseOptionsApplyForBase" value="SL/basic" />
+				<string name="BaseOptionsHideGUI" value="SL/basic" />
+				<string name="BaseOptionsShow" value="SL/basic" />
+				<!-- Вкладка ЛЮДИ базы -->
+				<string name="BasePeoplesMove" value="SL/move_to_unit_base" />
+				<string name="BasePeoplesAppointCommander" value="SL/appoint_commander" />
+				<string name="BasePeoplesAppointCommanderInChief" value="SL/appoint_marshall" />
+				<string name="BasePeoplesNextBase" value="SL/basic" />
+				<string name="BasePeoplesPrevBase" value="SL/basic" />
+				<string name="BasePeoplesCommandersBookmark" value="SL/leaf_bookmark3" />
+				<string name="BasePeoplesTraining" value="SL/start_training" />
+				<string name="BasePeoplesCommanderClick" value="SL/basic" />
+				<string name="BasePeoplesCommanderMove" value="SL/move_to_unit_base" />
+				<string name="BasePeoplesCommanderWindowClose" value="SL/basic" />
+				<string name="BasePeoplesMoveBookmarks" value="SL/basic" />
+				<string name="BasePeoplesMoveButtons" value="SL/basic" />
+				<!-- Вкладка СКЛАД базы -->
+				<string name="BaseStoreAmmoLoad" value="SL/ammunition_load" />
+				<string name="BaseStoreAmmoLoadToTransports" value="SL/ammo_load" />
+				<string name="BaseStoreOilLoad" value="SL/petrolium_load" />
+				<string name="BaseStoreLoadPopup" value="SL/basic" />
+				<string name="BaseStoreLoad" value="SL/basic" />
+				<string name="BaseStoreUnLoad" value="SL/basic" />
+				<string name="BaseStoreUnLoadAll" value="SL/discharge_all" />
+				<string name="BaseStoreSendCargo" value="SL/basic" />
+				<string name="BaseStoreSendPeoples" value="SL/basic" />
+				<string name="BaseStoreCancelCargo" value="SL/stop2" />
+				<string name="BaseStoreMessageOn" value="SL/check_box" />
+				<string name="BaseStoreMessageOff" value="SL/check_box" />
+				<string name="BaseStoreListItemSelect" value="SL/pick_out_from_list" />
+				<!-- Вcе звуки в окне отправки груза -->
+				<string name="BaseStoreSendCargoWindowClick" value="SL/transfer" />
+				<!-- Вcе звуки в окне наcтройки количеcтва груза -->
+				<string name="BaseStoreCargoAmount" value="SL/basic" />
+				<!-- Вкладка ФОРМАЦИИ базы -->
+				<string name="BaseFormationsLeaveBase" value="SL/leave_base" />
+				<string name="BaseFormationsSeparate" value="SL/separate_x" />
+				<string name="BaseFormationsJoin" value="SL/join_x" />
+				<string name="BaseFormationsJoinForTransportation" value="SL/join_x" />
+				<string name="BaseFormationsReinforce" value="SL/supplement_formation" />
+				<string name="BaseFormationsChangeModification" value="SL/basic" />
+				<string name="BaseFormationsSelectAmmo" value="SL/basic" />
+				<string name="BaseFormationsTraining1" value="SL/training_basic" />
+				<string name="BaseFormationsTraining2" value="SL/training_shoot" />
+				<string name="BaseFormationsTraining3" value="SL/training_manoeuvres" />
+				<string name="BaseFormationsRest" value="SL/rest" />
+				<string name="BaseFormationsDisband" value="SL/break_up_formation" />
+				<string name="BaseFormationsInfo" value="SL/formation_info" />
+				<string name="BaseFormationsInfoClose" value="SL/basic" />
+				<string name="BaseFormationsSetRoutes" value="SL/basic" />
+				<string name="BaseFormationsSortSelect" value="SL/basic" />
+				<string name="BaseFormationsSelectFormationInTree" value="SL/basic" />
+				<string name="BaseFormationsSelectFormationType" value="SL/basic" />
+				<string name="BaseFormationsOnFilterButtons" value="SL/basic" />
+				<string name="BaseFormationsOnFormButton" value="SL/form" />
+				<!-- Окно формирования формации -->
+				<string name="BaseFormationsNewFormWindowOnSelect" value="SL/basic" />
+				<string name="BaseFormationsNewFormWindowOnFormAll" value="SL/basic" />
+				<string name="BaseFormationsNewFormWindowOnClose" value="SL/basic" />
+				<string name="BaseFormationsNewFormWindowOnForm" value="SL/basic" />
+				<!-- Контекcтное меню формации на карте -->
+				<string name="FormationOnMapShowInfo" value="SL/unit_info_open" />
+				<string name="FormationOnMapEscort" value="SL/basic" />
+				<string name="FormationOnMapGoToBase" value="SL/basic" />
+				<string name="FormationOnMapGoToBaseAndSign" value="SL/arrival_report" />
+				<string name="FormationOnMapPatrol" value="SL/basic" />
+				<string name="FormationOnMapStop" value="SL/stop" />
+				<string name="FormationOnMapCreateBase" value="SL/establish_base" />
+				<string name="FormationOnMapLaunchMissiles" value="SL/basic" />
+				<string name="FormationOnMapStopMissiles" value="SL/basic" />
+				<string name="FormationOnMapAirAttack" value="SL/basic" />
+				<!-- Интерфейc cтатиcтики. -->
+				<string name="StatisticGUICheckBox" value="SL/basic" />
+				<string name="StatisticGUIToggleTabs" value="SL/basic" />
+				<string name="StatisticGUIToggleList" value="SL/basic" />
+				<string name="StatisticGUISetAll" value="SL/basic" />
+				<string name="StatisticGUIClearAll" value="SL/basic" />
+				<string name="StatisticGUIShow" value="SL/basic" />
+				<string name="StatisticGUIHide" value="SL/basic" />
+				<string name="ForcesGUIElementSelect" value="SL/basic" />
+				<string name="ForcesGUISortSelect" value="SL/basic" />
+				<!-- Звуки окна дипломатии. -->
+				<string name="SLDiplomatNation" value="SL/basic" />
+				<string name="SLDiplomatPact" value="SL/basic" />
+				<string name="SLDiplomatClose" value="SL/basic" />
+				<string name="SLDiplomacyNewPactAddLeft" value="SL/basic" />
+				<string name="SLDiplomacyNewPactAddRight" value="SL/basic" />
+				<string name="SLDiplomacyNewPactAccept" value="SL/basic" />
+				<string name="SLDiplomacyNewPactClose" value="SL/basic" />
+				<string name="SLDiplomacyNewPactDeleteSelectedLeft" value="SL/basic" />
+				<string name="SLDiplomacyNewPactDeleteSelectedRight" value="SL/basic" />
+				<string name="MakeFormationPopup" value="SL/basic" />
+				<string name="SLSeamenOnBaseTab" value="SL/basic" />
+				<string name="SLPilotsOnBaseTab" value="SL/basic" />
+				<!-- Звуки интерфеcа формации. -->
+				<string name="SLFormationInfoScoutingOpt" value="SL/check_box" />
+				<string name="SLFormationInfoAirAttackOpt" value="SL/check_box" />
+				<!-- Звуки изменения модификаций. -->
+				<string name="SLOnSelectModification" value="SL/basic" />
+				<string name="SLMenuitemCopy" value="SL/basic" />
+				<string name="SLMenuitemDelete" value="SL/basic" />
+				<string name="SLMenuitemRename" value="SL/basic" />
+				<string name="SLObjectsEditorSlotClick" value="SL/basic" />
+				<string name="SLObjectsEditorImageClick" value="SL/basic" />
+				<string name="SLObjectsEditorFilterCheckBox" value="SL/basic" />
+				<string name="SLChangeModClose" value="SL/basic" />
+				<string name="SLOnUnitEditor" value="SL/basic" />
+				<!-- Звуки изменения вооружение. -->
+				<string name="SLRackGUIHide" value="SL/basic" />
+				<string name="SLRackGUIAssign" value="SL/basic" />
+				<string name="SLRackGUISelect" value="SL/basic" />
+				<!--SLMakeBasePopup-->
+				<string name="SLMakeBasePopup" value="SL/basic" />
+				<string name="SLMakeFormationMarchPopup" value="SL/basic" />
+				<!--назначение маршрута-->
+				<string name="SLTransportRouteAssignedListBtn" value="SL/basic" />
+				<string name="SLTransportRouteUnAssignedListBtn" value="SL/basic" />
+				<string name="SLTransportRouteClearBtn" value="SL/basic" />
+				<string name="SLTransportRouteSetBtn" value="SL/basic" />
+				<string name="SLTransportRouteCloseBtn" value="SL/basic" />
+				<string name="SLTransportRouteUnAssignedList" value="SL/basic" />
+				<string name="SLTransportRouteAssignedList" value="SL/basic" />
+				<string name="SLTransportRoutemFormationsList" value="SL/basic" />
+				<!--меню технологий  и производcтва-->
+				<string name="MakeTechnologyQuquePopup" value="SL/basic" />
+				<string name="MakeProductionQuquePopup" value="SL/basic" />
+				<string name="SLProductionEditBtns" value="SL/basic" />
+				<string name="SLProductionTechListClick" value="SL/basic" />
+				<string name="SLProductionCancelOrder" value="SL/basic" />
+				<string name="SLProductionApplyOrder" value="SL/basic" />
+				<string name="SLProductionTechCloseBtn" value="SL/basic" />
+				<string name="SLProductionTechApplyBtn" value="SL/basic" />
+				<string name="SLProductionMakeOrder" value="SL/basic" />
+				<string name="SLTechnologyOpenBuy" value="SL/basic" />
+				<string name="SLTechnologyAddToResearch" value="SL/basic" />
+				<string name="SLTechnologyBuyList" value="SL/basic" />
+				<string name="SLTechnologyBuyBuy" value="SL/basic" />
+				<string name="SLTechnologyBuyClose" value="SL/basic" />
+				<string name="SLProductionOrderMinCost" value="SL/basic" />
+				<string name="SLProductionOrderMaxCost" value="SL/basic" />
+				<string name="SLProductionOrderMinPriority" value="SL/basic" />
+				<string name="SLProductionOrderMaxPriority" value="SL/basic" />
+				<string name="SLTechnologyOrderMaxCost" value="SL/basic" />
+				<string name="SLTechnologyOrderMinCost" value="SL/basic" />
+				<string name="SLTechnologyOrderCancelBtn" value="SL/basic" />
+				<string name="SLTechnologyOrderApplyBtn" value="SL/basic" />
+				<string name="SelectProfileStatistics" value="SL/basic" />
+				<string name="SelectProfileStart" value="SL/basic" />
+				<string name="SelectProfileCancel" value="SL/basic" />
+				<string name="SelectProfileCreate" value="SL/basic" />
+				<string name="SelectProfileInList" value="SL/basic" />
+				<string name="SelectProfileClickOk" value="SL/basic" />
+				<!--string name = "SelectProfileDelete" value = "SL/basic" /-->
+				<string name="MainMenuStartingGame" value="SL/basic" />
+				<string name="MainMenuNewGame" value="SL/basic" />
+				<string name="NewGameMenuSingle" value="SL/basic" />
+				<string name="NewGameMenuHost" value="SL/basic" />
+				<string name="NewGameMenuJoin" value="SL/basic" />
+				<string name="NewGameMenuBackToMain" value="SL/basic" />
+				<string name="SingleGameMenuCancel" value="SL/basic" />
+				<string name="SingleGameMenuGameTypeList" value="SL/basic" />
+				<string name="SingleGameMenuNationSelect" value="SL/basic" />
+				<string name="SingleGameMenuLevelSelect" value="SL/basic" />
+				<string name="SingleGameMenuStart" value="SL/basic" />
+				<string name="SingleGameMenuArcadeOnOff" value="SL/basic" />
+				<string name="NewHostGameTypeList" value="SL/basic" />
+				<string name="NewHostGameCancel" value="SL/basic" />
+				<string name="NewHostLocalNetworkCheckbox" value="SL/basic" />
+				<string name="NewHostStart" value="SL/basic" />
+				<string name="NewBattleIMenuMissionList" value="SL/basic" />
+				<string name="NewBattleIMenuMissionStart" value="SL/basic" />
+				<string name="BattlePlannerMenuAdd" value="SL/basic" />
+				<string name="BattlePlannerMenuOk" value="SL/basic" />
+				<string name="BattlePlannerMenuStart" value="SL/basic" />
+				<string name="BattlePlannerMenuCancel" value="SL/basic" />
+				<string name="BattlePlannerMenuLeftAdd" value="SL/basic" />
+				<string name="BattlePlannerMenuRightAdd" value="SL/basic" />
+				<string name="BattlePlannerMenuRightRemove" value="SL/basic" />
+				<string name="BattlePlannerMenuLeftRemove" value="SL/basic" />
+				<string name="BattlePlannerMenuPlayerCountryButton" value="SL/basic" />
+				<string name="BattlePlannerMenuAICountryButton" value="SL/basic" />
+				<string name="BattlePlannerPlayerExpButton" value="SL/basic" />
+				<string name="BattlePlannerPlayerAttackDefence" value="SL/basic" />
+				<string name="BattlePlannerMenuChange" value="SL/basic" />
+				<string name="BattlePlannerMenuApply" value="SL/basic" />
+				<string name="FindServerRefresh" value="SL/basic" />
+				<string name="FindServerLocalNetworkCheckbox" value="SL/basic" />
+				<string name="FindServerCancel" value="SL/basic" />
+				<string name="FindServerJoin" value="SL/basic" />
+				<string name="ProfileStatisticsRewardsList" value="SL/basic" />
+				<string name="SelectProfileStatisticsOk" value="SL/basic" />
+			</object>
+			<!-- Звуки на тактике на cобытия интерфейcа вcячеcкие -->
+			<object name="TacticLevelInterfaceSnd">
+				<string name="MinimapHide" value="TL/close_map" />
+				<string name="MinimapShow" value="TL/open_map" />
+				<string name="MinimapOpenMessageHistory" value="TL/open_message_history" />
+				<string name="MinimapCloseMessageHistory" value="TL/close_message_history" />
+				<string name="MinimapEnlarge" value="TL/enlarge_map" />
+				<string name="MinimapMiniaturize" value="TL/miniaturize_map" />
+				<string name="MissionInfo" value="TL/mission_info" />
+				<string name="MinimapMenu" value="TL/basic" />
+				<string name="MinimapPause" value="TL/pause" />
+				<string name="MinimapExitToSLMap" value="TL/basic" />
+				<string name="MinimapSpeed+" value="TL/game_speed_plus" />
+				<string name="MinimapSpeed-" value="TL/game_speed_minus" />
+				<string name="MinimapShowFireVectors" value="TL/basic" />
+				<string name="MinimapShowFireRanges" value="TL/basic" />
+				<string name="MinimapCallReinforcements" value="TL/basic" />
+				<!-- Левое меню -->
+				<string name="LeftControlUnit" value="TL/basic" />
+				<string name="LeftUnitInfoOpen" value="TL/unit_info_open" />
+				<string name="LeftUnitInfoClose" value="TL/unit_info_close" />
+				<string name="LeftUnitRetreat" value="TL/basic" />
+				<string name="LeftUnitCameraTrack" value="TL/basic" />
+				<!-- Правое меню -->
+				<string name="RigthUnitAiMin" value="TL/min" />
+				<string name="RigthUnitAiMed" value="TL/med" />
+				<string name="RigthUnitAiMax" value="TL/max" />
+				<string name="RigthUnitAttackDistMin" value="TL/min" />
+				<string name="RigthUnitAttackDistMed" value="TL/med" />
+				<string name="RigthUnitAttackDistMax" value="TL/max" />
+				<string name="RigthUnitSetAttackPriority" value="TL/basic" />
+				<!-- Дейcтвия -->
+				<string name="ActionChangeFocus" value="TL/cange_focus" />
+				<string name="ActionStopAll" value="TL/stop2" />
+				<string name="ActionCantFireUS" value="TL/basic" />
+				<string name="ActionCantFireE" value="TL/basic" />
+				<string name="ActionCantFireG" value="TL/basic" />
+				<string name="ActionCantFireN" value="TL/basic" />
+				<string name="ActionCantFireJ" value="TL/basic" />
+				<string name="ActionCantFireUSSR" value="TL/basic" />
+				<string name="ActionCanFireUS" value="TL/basic" />
+				<string name="ActionCanFireE" value="TL/basic" />
+				<string name="ActionCanFireG" value="TL/basic" />
+				<string name="ActionCanFireJ" value="TL/basic" />
+				<string name="ActionCanFireN" value="TL/basic" />
+				<string name="ActionCanFireUSSR" value="TL/basic" />
+				<string name="ActionFireTorpedoUS" value="TL/basic" />
+				<string name="ActionFireTorpedoG" value="TL/basic" />
+				<string name="ActionFireTorpedoE" value="TL/basic" />
+				<string name="ActionFireTorpedoJ" value="TL/basic" />
+				<string name="ActionFireTorpedoN" value="TL/basic" />
+				<string name="ActionFireTorpedoUSSR" value="TL/basic" />
+				<string name="ActionOpenHangar" value="TL/takeoffhangar" />
+				<string name="ActionMenuBack" value="TL/back" />
+				<string name="ActionAllowAutoLanding" value="TL/autolanding" />
+				<string name="ActionDisAllowAutoLanding" value="TL/autolanding_light" />
+				<string name="ActionAllowAutoTakeoff" value="TL/autotakeoff" />
+				<string name="ActionDisAllowAutoTakeoff" value="TL/autotakeoff_light" />
+				<string name="ActionLandAirplane" value="TL/basic" />
+				<string name="ActionKamikadzeOn" value="TL/kamikadze_light" />
+				<string name="ActionKamikadzeOff" value="TL/basic" />
+				<string name="ActionSubmarineSurface" value="TL/sub_surface" />
+				<string name="ActionSubmarinePeriscope" value="TL/sub_periscope" />
+				<string name="ActionSubmarineMaxDepth" value="TL/sub_max_depth" />
+				<string name="ActionProtectUnit" value="TL/basic" />
+				<string name="ActionRotateToPoint" value="TL/basic" />
+				<string name="ActionAttackPoint" value="TL/basic" />
+				<string name="ActionPlaneTakeOff" value="TL/basic" />
+				<string name="ToggleDirectControl" value="TL/basic" />
+				<string name="ToggleShipDirectControl" value="TL/basic" />
+				<string name="ToggleBigGunsControl" value="TL/basic" />
+				<string name="ToggleMediumGunsControl" value="TL/basic" />
+				<string name="ToggleTorpedoTubesControl" value="TL/basic" />
+				<string name="ShowHLUnitInfo" value="TL/basic" />
+				<string name="HitLocationViewSwitch" value="TL/basic" />
+				<string name="HitLocationShipViewBoth" value="TL/basic" />
+				<string name="HitLocationShipClose" value="TL/basic" />
+				<string name="HitLocationPlaneClose" value="TL/basic" />
+				<string name="HitLocationPlaneShowDevices" value="TL/basic" />
+				<string name="TLStatisticsOK" value="TL/basic" />
+				<!-- Перегрузки в кабине при маневрировании -->
+				<string name="PlaneHeartBeating" value="TL/heart_beating" />
+				<string name="TLAddingMessage" value="TL/basic" />
+				<string name="SelectUnitsByIcons" value="TL/basic" />
+				<string name="F12Pause" value="TL/pause" />
+			</object>
+			<object name="Timeouts">
+				<float name="100" value="30.0" /> <!-- самолёт летит прямо на врага -->
+				<float name="101" value="30.0" /> <!-- бомбер вышел на цель -->
+				<float name="102" value="30.0" /> <!-- начало атаки (бомбер и истребитель) -->
+				<float name="103" value="30.0" /> <!-- бомбер попал во врага -->
+				<float name="104" value="30.0" /> <!-- враг атакует юнита -->
+				<float name="105" value="30.0" /> <!-- сработал автовозврат или нажали на возврат -->
+				<float name="106" value="30.0" /> <!-- сбивают самолет -->
+				<float name="107" value="30.0" /> <!-- банзай -->
+			</object>
+		</object>
+	</object>
+</root>
