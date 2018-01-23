@@ -8,6 +8,7 @@
 #!*/webapps/ROOT/*
 !/config/*
 !/mods/_128_Shoho/*
+!/mods/_142_Chuyo/*
 !/mods/Zzz_Otto_Carriers_Airgroups/*
 
 # Don`t ignore directories, so we can recurse into them
